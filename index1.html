@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Lubricants - Specialty Lubricants & Surface Treatment Solutions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Styles for Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Sticky header padding for hash links */
+        html {
+            scroll-padding-top: 6rem; /* Adjust based on header height */
+        }
+        .section-separator {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #FBBF24; /* Amber accent */
+            margin: 0 auto 30px;
+            border-radius: 9999px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#004A99', /* Deep, corporate blue */
+                        'accent-yellow': '#FBBF24', /* Amber/Kluber accent */
+                        'bg-gray': '#f7f7f7',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-primary-blue shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center py-4">
+            <a href="#home" class="text-2xl font-bold text-white tracking-tight">
+                Essential Lubricants
+            </a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-4 sm:space-x-8">
+                    <li><a href="#home" class="text-white hover:text-accent-yellow transition duration-200 font-medium">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-accent-yellow transition duration-200 font-medium">About</a></li>
+                    <li><a href="#products" class="text-white hover:text-accent-yellow transition duration-200 font-medium">Products</a></li>
+                    <li><a href="#services" class="text-white hover:text-accent-yellow transition duration-200 font-medium">Services</a></li>
+                    <li><a href="#contact" class="text-white hover:text-accent-yellow transition duration-200 font-medium">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Home) -->
+    <section id="home" class="relative pt-32 pb-24 bg-cover bg-center" style="background-image: url('https://placehold.co/1200x500/004A99/FFFFFF?text=INDUSTRIAL+PARTNERSHIP');">
+        <div class="absolute inset-0 bg-primary-blue opacity-75"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+                Your Trusted Partner for Specialty Lubricants and Chemical Solutions
+            </h1>
+            <p class="text-xl text-gray-200 mb-8">
+                Authorized Channel Partners for **Klüber Lubrication** and **BASF Chemetall** in the Marathwada Region.
+            </p>
+            <a href="#products" class="inline-block px-10 py-3 text-lg font-semibold bg-accent-yellow text-primary-blue rounded-full shadow-xl hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+                Explore Our Solutions
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. About Us Section -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-10">About Essential Lubricants</h2>
+            <div class="section-separator"></div>
+
+            <p class="text-lg text-center max-w-4xl mx-auto mb-12 text-gray-600">
+                At M/s. Essential Lubricants, we don't just supply products; we provide **expert, application-based solutions** to optimize your machinery's performance, longevity, and efficiency. We bring global quality and expertise right to your industrial processes.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-center text-gray-700 mb-8">Our Authorized Partnerships</h3>
+            
+            <!-- Partnership Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-bg-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                    <h4 class="text-xl font-bold text-primary-blue mb-2">Klüber Lubrication (Specialty Lubricants)</h4>
+                    <p class="text-sm text-gray-600">Authorized Channel Partner for **Jalna, Khamgaon, Malkapur, Burhanpur, Latur, and Nanded**. Providing 2,500+ specialty lubricants for extreme industrial conditions.</p>
+                </div>
+                <div class="bg-bg-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                    <h4 class="text-xl font-bold text-primary-blue mb-2">BASF Chemetall (Surface Treatment)</h4>
+                    <p class="text-sm text-gray-600">Authorized Channel Partner for **Aurangabad and Jalna**. Global leaders in surface treatment chemicals, enhancing product quality and process efficiency.</p>
+                </div>
+                <div class="bg-bg-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-blue">
+                    <h4 class="text-xl font-bold text-primary-blue mb-2">Lawas Lube Specialties (Industrial Fluids)</h4>
+                    <p class="text-sm text-gray-600">Offering a comprehensive range of essential industrial fluids including cutting oils, hydraulic oils, and gear oils for daily operational needs.</p>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="mt-12 text-center pt-8 border-t border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-4">Contact Our Experts</h3>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-lg font-medium">
+                    <p class="text-gray-600">Mr. Shripad Savangikar (Proprietor)</p>
+                    <p class="text-gray-600">Mr. Vaibhav Kalyankar (Sales Executive): <a href="tel:+917588118740" class="text-primary-blue hover:text-accent-yellow transition duration-200">9422966662</a> | <a href="tel:+917588118740" class="text-primary-blue hover:text-accent-yellow transition duration-200">7588118740</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Products & Solutions Section (LLM Feature Added) -->
+    <section id="products" class="py-16 sm:py-24 bg-bg-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-10">Our Product Offerings</h2>
+            <div class="section-separator"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Kluber Column -->
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-8 border-primary-blue">
+                    <h3 class="text-2xl font-bold text-primary-blue mb-4">Klüber Lubrication</h3>
+                    <ul class="space-y-3 text-gray-700 list-disc pl-5">
+                        <li class="font-semibold">Specialty Greases: <span class="font-normal">(High temperature, Water Resistances, High Speed, Low Speed)</span></li>
+                        <li class="font-semibold">Oils (Mineral & Synthetics): <span class="font-normal">(Gear, Wire Rope, Chain Oil, Compressor Oil)</span></li>
+                        <li class="font-semibold">Pastes: <span class="font-normal">(Assembly, Anti Seize Compound, Heat Sink, Silicon)</span></li>
+                        <li>Corrosion Protection & Rust Prevention</li>
+                        <li>Maintenance Products: <span class="font-normal">(Cleaner, Leak Detector Spray, Contact Cleaner)</span></li>
+                    </ul>
+                </div>
+
+                <!-- BASF Chemetall Column -->
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-8 border-primary-blue">
+                    <h3 class="text-2xl font-bold text-primary-blue mb-4">BASF Chemetall</h3>
+                    <ul class="space-y-3 text-gray-700 list-disc pl-5">
+                        <li class="font-semibold">Cleaners: <span class="font-normal">(Industrial Washing Chemicals and Degreasers)</span></li>
+                        <li class="font-semibold">Metal Pre-treatment Chemicals: <span class="font-normal">(Phospheting, PBA, etc.)</span></li>
+                        <li>Rust Preventives</li>
+                        <li>Cutting Oils: <span class="font-normal">(Synthetic & Semi-Synthetic for Metalworking)</span></li>
+                    </ul>
+                    <h4 class="text-xl font-bold text-gray-700 mt-6 mb-2">Related Industrial Focus:</h4>
+                    <p class="text-sm text-gray-600">Chemetall solutions are critical for sectors like Automotive Manufacturing, General Industry, and Aerospace, focusing on superior surface preparation for coating and welding.</p>
+                </div>
+
+                <!-- Lawas Lube Column -->
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-8 border-primary-blue">
+                    <h3 class="text-2xl font-bold text-primary-blue mb-4">Lawas Lube Specialties</h3>
+                    <ul class="space-y-3 text-gray-700 list-disc pl-5">
+                        <li>Cutting Oil & Semi Synthetic Cutting oil</li>
+                        <li>Hydraulic Oil & Gear Oil</li>
+                        <li>Honing Oil & Broaching oil</li>
+                        <li>Rust Preventive Oil</li>
+                        <li>Industrial Greases</li>
+                    </ul>
+                    <h4 class="text-xl font-bold text-gray-700 mt-6 mb-2">Why Choose Our Portfolio?</h4>
+                    <p class="text-sm text-gray-600">We offer a high-performance specialty selection (Klüber/Chemetall) combined with reliable, essential industrial fluids (Lawas) for a comprehensive supply solution.</p>
+                </div>
+            </div>
+
+            <!-- LLM Feature: Application Solver -->
+            <div class="bg-white p-6 sm:p-10 rounded-xl shadow-2xl border-2 border-accent-yellow max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-primary-blue mb-4 text-center">✨ Application Solver: Find Your Solution Instantly</h3>
+                <p class="text-md text-gray-600 mb-6 text-center">Describe your machinery, operating conditions, or required surface treatment, and our AI expert will suggest the best product and service category.</p>
+                
+                <textarea id="applicationInput" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue transition duration-150 resize-y" rows="3" placeholder="Example: Need high-temperature, food-grade grease for a chain conveyor in a bakery oven." required></textarea>
+                
+                <button id="solutionButton" class="w-full py-3 mt-4 bg-primary-blue text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9a1 1 0 000 2h2a1 1 0 100-2h-2zm-2.828 3.536a1 1 0 001.414 0L10 11.414l1.414 1.414a1 1 0 001.414-1.414L10 10l-1.414-1.414a1 1 0 00-1.414 1.414z" clip-rule="evenodd"></path></svg>
+                    Suggest Solution Category
+                </button>
+
+                <div id="solutionLoading" class="hidden text-center mt-4 text-primary-blue font-semibold">
+                    <span class="animate-pulse">Analyzing application...</span>
+                </div>
+                
+                <div id="solutionOutput" class="mt-6 p-4 bg-bg-gray rounded-lg border-l-4 border-accent-yellow min-h-[50px] overflow-x-auto text-sm whitespace-pre-wrap">
+                    <!-- LLM output will appear here -->
+                </div>
+                <div id="solutionSources" class="text-xs text-gray-500 mt-2"></div>
+            </div>
+            <!-- End LLM Feature -->
+
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-10">Value-Added Services</h2>
+            <div class="section-separator"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Analysis -->
+                <div class="p-6 bg-bg-gray rounded-xl shadow-md flex flex-col items-center text-center">
+                    <svg class="w-12 h-12 text-accent-yellow mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l2-2h4l2 2v13M9 19h12M9 19c0 1.105-1.79 2-4 2s-4-.895-4-2m16 0c0 1.105-1.79 2-4 2s-4-.895-4-2"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Condition Monitoring & Analysis</h3>
+                    <p class="text-gray-600">
+                        Detailed Oil Analysis, Grease Analysis, and Lube Condition Monitoring. Proactive checks to prevent component failure and maximize lubricant life.
+                    </p>
+                </div>
+
+                <!-- Service 2: Mapping -->
+                <div class="p-6 bg-bg-gray rounded-xl shadow-md flex flex-col items-center text-center">
+                    <svg class="w-12 h-12 text-accent-yellow mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Lube Mapping & Rationalization</h3>
+                    <p class="text-gray-600">
+                        Expert review and mapping of your plant machinery to ensure the "right product in the right place." Essential for inventory reduction and contamination control.
+                    </p>
+                </div>
+
+                <!-- Service 3: TPM/Training -->
+                <div class="p-6 bg-bg-gray rounded-xl shadow-md flex flex-col items-center text-center">
+                    <svg class="w-12 h-12 text-accent-yellow mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 21h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.805A1.75 1.75 0 023 15.688C1.493 14.197 1 12.56 1 11c0-3.9 3.1-7 7-7h.01C12 4.01 15.97 8.03 21 12z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">TPM & Technical Training</h3>
+                    <p class="text-gray-600">
+                        Support for Total Productive Maintenance (TPM) programs and on-site technical training for your maintenance staff on specialty product application.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Competitive Advantage Section -->
+            <div class="mt-16 pt-10 border-t border-gray-200 text-center">
+                <h3 class="text-2xl font-bold text-primary-blue mb-4">Why Choose Essential Lubricants Over Competitors?</h3>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    While many distributors in the region offer commodity-grade oils, we specialize in high-performance, problem-solving products from global leaders (**Klüber, BASF Chemetall**). Our unique blend of technical analysis and a comprehensive product basket ensures optimal machine uptime and efficiency, giving you a competitive edge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Us Section (LLM/TTS Feature Added) -->
+    <section id="contact" class="py-16 sm:py-24 bg-bg-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-primary-blue mb-10">Get in Touch</h2>
+            <div class="section-separator"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Details & TTS Feature -->
+                <div class="lg:order-2 bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent-yellow">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Our Location & Contacts</h3>
+                    <div class="space-y-4 text-lg">
+                        <p class="font-medium text-primary-blue">
+                            <span class="block text-gray-500 text-sm">Main Address</span>
+                            Essential Lubricants, Plot No. 8 Jijamata Colony, Near Paithan Gate, Aurangabad 431001
+                        </p>
+                        <p class="font-medium">
+                            <span class="block text-gray-500 text-sm">Email</span>
+                            <a href="mailto:lubricantsessential@gmail.com" class="text-primary-blue hover:text-accent-yellow">lubricantsessential@gmail.com</a>
+                        </p>
+                        <p class="font-medium">
+                            <span class="block text-gray-500 text-sm">Contact Persons</span>
+                            Mr. Shripad Savangikar: <a href="tel:+919422966662" class="text-primary-blue hover:text-accent-yellow">9422966662</a><br>
+                            Mr. Vaibhav Kalyankar (Sales): <a href="tel:+917588118740" class="text-primary-blue hover:text-accent-yellow">7588118740</a>
+                        </p>
+                    </div>
+
+                    <h4 class="text-xl font-semibold text-gray-700 mt-8">Service Region:</h4>
+                    <p class="text-sm text-gray-600">Klüber Lubrication: Jalna, Khamgaon, Malkapur, Burhanpur, Latur, Nanded. | BASF Chemetall: Aurangabad, Jalna.</p>
+
+                    <!-- LLM/TTS Feature: Company Value Proposition -->
+                    <div class="mt-8 pt-4 border-t border-gray-200">
+                        <h3 class="text-xl font-bold text-primary-blue mb-4">🔊 Hear Our Value Proposition</h3>
+                        <div id="summaryLoading" class="hidden text-center text-primary-blue font-semibold mb-2">
+                            <span class="animate-pulse">Generating professional summary...</span>
+                        </div>
+                        <div id="valueSummaryOutput" class="p-3 bg-bg-gray rounded-lg border-l-4 border-primary-blue min-h-[50px] text-sm">
+                            <!-- Summary text will appear here -->
+                        </div>
+                        <div class="flex space-x-2 mt-4">
+                             <button id="summaryGenerateButton" class="flex-1 py-2 bg-primary-blue text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition duration-300">
+                                ✨ Generate Summary
+                            </button>
+                            <button id="ttsButton" disabled class="w-1/3 py-2 bg-accent-yellow text-primary-blue text-sm font-bold rounded-lg hover:bg-yellow-400 transition duration-300 disabled:opacity-50">
+                                <svg id="ttsIcon" class="w-5 h-5 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 7.343a1 1 0 010 1.414 5 5 0 000 7.071 1 1 0 01-1.414 1.414 7 7 0 010-9.9l1.414 1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </div>
+                        <audio id="audioPlayback" class="hidden" controls></audio>
+                    </div>
+                    <!-- End LLM/TTS Feature -->
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:order-1">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Send Us an Inquiry</h3>
+                    <!-- For a static site, action="#" is used. Users need a backend service like Formspree or Netlify Forms to receive submissions. -->
+                    <form action="#" method="POST" class="bg-white p-6 rounded-xl shadow-lg space-y-4">
+                        <input type="text" name="name" placeholder="Your Name *" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue transition duration-150">
+                        <input type="email" name="email" placeholder="Your Company Email *" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue">
+                        <input type="tel" name="phone" placeholder="Your Phone Number *" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue">
+                        <textarea name="message" placeholder="Your Requirement / Application Area (e.g., need high-temp grease for furnace conveyor)" rows="4" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue"></textarea>
+                        <button type="submit" class="w-full py-3 bg-accent-yellow text-primary-blue font-bold rounded-lg hover:bg-yellow-400 transition duration-300 shadow-md">
+                            Submit Inquiry
+                        </button>
+                        <p class="text-xs text-gray-500 mt-2 text-center">(*Note: For form submission to work, this static site requires integration with a form backend service.)</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Essential Lubricants. All rights reserved.</p>
+            <p class="text-xs mt-1 text-gray-400">Authorized Partners of Klüber Lubrication and BASF Chemetall in Maharashtra, India.</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // --- Firebase Setup (Mandatory Environment Requirements) ---
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Global environment variables provided by the Canvas
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        let app, db, auth;
+
+        if (firebaseConfig) {
+            app = initializeApp(firebaseConfig);
+            db = getFirestore(app);
+            auth = getAuth(app);
+            
+            // Authenticate user as required
+            (async () => {
+                try {
+                    if (initialAuthToken) {
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+                    console.log("Firebase initialized and user authenticated.");
+                } catch (error) {
+                    console.error("Firebase authentication failed:", error);
+                }
+            })();
+        } else {
+            console.error("Firebase config not available. Proceeding without Firebase.");
+        }
+
+        const apiKey = ""; // API key is handled by the Canvas environment
+
+        // --- Utility Functions for Gemini API and TTS ---
+
+        // Function for exponential backoff during API retries
+        const performGeminiApiCall = async (apiUrl, payload, maxRetries = 5) => {
+            for (let attempt = 0; attempt < maxRetries; attempt++) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        if (response.status === 429 && attempt < maxRetries - 1) {
+                            const delay = Math.pow(2, attempt) * 1000 + Math.random() * 1000;
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            continue;
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    if (attempt === maxRetries - 1) {
+                        console.error(`Gemini API call failed after ${maxRetries} attempts:`, error);
+                        throw error;
+                    }
+                }
+            }
+        };
+
+        // Utility to convert Base64 to ArrayBuffer
+        const base64ToArrayBuffer = (base64) => {
+            const binaryString = atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        };
+
+        // Utility to convert PCM data to WAV Blob
+        const pcmToWav = (pcmData, sampleRate) => {
+            const buffer = new ArrayBuffer(44 + pcmData.length * 2);
+            const view = new DataView(buffer);
+
+            // RIFF chunk descriptor
+            writeString(view, 0, 'RIFF');
+            view.setUint32(4, 36 + pcmData.length * 2, true);
+            writeString(view, 8, 'WAVE');
+            
+            // FMT chunk
+            writeString(view, 12, 'fmt ');
+            view.setUint32(16, 16, true); // ChunkSize
+            view.setUint16(20, 1, true); // AudioFormat (1 for PCM)
+            view.setUint16(22, 1, true); // NumChannels (1)
+            view.setUint32(24, sampleRate, true); // SampleRate
+            view.setUint32(28, sampleRate * 2, true); // ByteRate (SampleRate * NumChannels * BitsPerSample/8)
+            view.setUint16(32, 2, true); // BlockAlign (NumChannels * BitsPerSample/8)
+            view.setUint16(34, 16, true); // BitsPerSample (16 bit)
+
+            // DATA chunk
+            writeString(view, 36, 'data');
+            view.setUint32(40, pcmData.length * 2, true); // DataSize
+
+            // Write PCM data
+            let offset = 44;
+            for (let i = 0; i < pcmData.length; i++) {
+                view.setInt16(offset, pcmData[i], true);
+                offset += 2;
+            }
+
+            return new Blob([view], { type: 'audio/wav' });
+        };
+
+        const writeString = (view, offset, string) => {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        };
+
+
+        // --- Feature 1: Application Solver Logic (Text Generation with Grounding) ---
+
+        const applicationInput = document.getElementById('applicationInput');
+        const solutionLoading = document.getElementById('solutionLoading');
+        const solutionOutput = document.getElementById('solutionOutput');
+        const solutionSources = document.getElementById('solutionSources');
+
+        async function getSolutionRecommendation() {
+            const userQuery = applicationInput.value.trim();
+            if (!userQuery) {
+                solutionOutput.innerHTML = '<span class="text-red-500">Please describe your application or requirement.</span>';
+                return;
+            }
+
+            solutionLoading.classList.remove('hidden');
+            solutionOutput.innerHTML = '';
+            solutionSources.innerHTML = '';
+
+            const systemPrompt = `Act as a highly experienced industrial lubrication and chemical expert representing Essential Lubricants. Your partners are Klüber Lubrication (specialty lubricants), BASF Chemetall (surface treatment/chemicals), and Lawas Lube Specialties (industrial fluids). Based on the user's input, suggest the most likely product category (Klüber Specialty Lubricant, BASF Chemetall Surface Treatment, or Lawas Industrial Fluid) that would solve this industrial problem. Also, list two related Essential Lubricants services that would be applicable from the following list: Condition Monitoring & Analysis, Lube Mapping & Rationalization, TPM & Technical Training. Keep the response concise, professional, and structured with headings.`;
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                tools: [{ "google_search": {} }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            try {
+                const result = await performGeminiApiCall(apiUrl, payload);
+                const candidate = result.candidates?.[0];
+                let text = "Could not generate a recommendation. Please try a different query.";
+                let sourcesHtml = '';
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    text = candidate.content.parts[0].text;
+                    
+                    const groundingMetadata = candidate.groundingMetadata;
+                    if (groundingMetadata && groundingMetadata.groundingAttributions) {
+                        const uniqueSources = {};
+                        groundingMetadata.groundingAttributions.forEach(attr => {
+                            if (attr.web?.uri && attr.web?.title) {
+                                uniqueSources[attr.web.uri] = attr.web.title;
+                            }
+                        });
+
+                        const sourcesList = Object.entries(uniqueSources).map(([uri, title], index) => 
+                            `<a href="${uri}" target="_blank" class="underline hover:text-primary-blue">${title}</a>`
+                        ).join(', ');
+
+                        if (sourcesList) {
+                            sourcesHtml = `Grounded in external sources: ${sourcesList}`;
+                        }
+                    }
+                }
+
+                solutionOutput.innerHTML = formatMarkdownToHtml(text);
+                solutionSources.innerHTML = sourcesHtml;
+            } catch (error) {
+                solutionOutput.innerHTML = `<span class="text-red-500">An error occurred while fetching the solution. Please check your network connection.</span>`;
+                console.error("Application Solver Error:", error);
+            } finally {
+                solutionLoading.classList.add('hidden');
+            }
+        }
+
+        // Simple markdown to HTML conversion for output styling
+        function formatMarkdownToHtml(markdown) {
+            let html = markdown;
+            // Convert bold **text**
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            // Convert list items
+            html = html.replace(/^\* (.*$)/gim, (match, p1) => `<li class="ml-4 list-disc">${p1}</li>`);
+            html = html.replace(/^- (.*$)/gim, (match, p1) => `<li class="ml-4 list-disc">${p1}</li>`);
+            // Convert headings
+            html = html.replace(/^### (.*$)/gim, '<strong>$1</strong><br>');
+            html = html.replace(/^## (.*$)/gim, '<p class="text-primary-blue font-bold mt-2">$1</p>');
+
+            return `<div class="p-2">${html}</div>`;
+        }
+
+        // --- Feature 2: Company Value Summary and TTS Logic ---
+
+        const valueSummaryOutput = document.getElementById('valueSummaryOutput');
+        const summaryLoading = document.getElementById('summaryLoading');
+        const ttsButton = document.getElementById('ttsButton');
+        const audioPlayback = document.getElementById('audioPlayback');
+
+        // Text Generation for Summary
+        async function generateValueSummary() {
+            summaryLoading.classList.remove('hidden');
+            ttsButton.disabled = true;
+            valueSummaryOutput.innerHTML = '';
+            audioPlayback.classList.add('hidden');
+            audioPlayback.pause();
+
+            const systemPrompt = "Act as a professional marketing copywriter for an industrial distributor. Summarize the key value proposition of Essential Lubricants in one professional paragraph (under 100 words), highlighting their authorized partnerships with Klüber Lubrication and BASF Chemetall.";
+            
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+            const userQuery = "Generate a summary of Essential Lubricants' value proposition.";
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            try {
+                const result = await performGeminiApiCall(apiUrl, payload);
+                const text = result.candidates?.[0]?.content?.parts?.[0]?.text || "Failed to generate summary.";
+                valueSummaryOutput.textContent = text;
+                ttsButton.disabled = false;
+            } catch (error) {
+                valueSummaryOutput.textContent = "Error generating summary.";
+                console.error("Summary Generation Error:", error);
+            } finally {
+                summaryLoading.classList.add('hidden');
+            }
+        }
+        
+        // TTS Playback
+        async function speakValueSummary() {
+            const textToSpeak = valueSummaryOutput.textContent;
+            if (!textToSpeak || textToSpeak === "Error generating summary." || textToSpeak.includes("Failed")) {
+                valueSummaryOutput.textContent = "Please generate the summary first.";
+                return;
+            }
+
+            ttsButton.disabled = true;
+            ttsButton.innerHTML = `<svg class="w-5 h-5 mx-auto animate-pulse" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.04 14.86a1 1 0 01-1.414-1.414L10 9.172l3.374 3.374a1 1 0 01-1.414 1.414L10 10.586l-1.96 1.96a1 1 0 01-1.414 0z"/></svg>`;
+            
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: textToSpeak }] }],
+                generationConfig: {
+                    responseModalities: ["AUDIO"],
+                    speechConfig: {
+                        voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } } // Firm and professional voice
+                    }
+                },
+                model: "gemini-2.5-flash-preview-tts"
+            };
+
+            try {
+                const result = await performGeminiApiCall(apiUrl, payload);
+                const part = result?.candidates?.[0]?.content?.parts?.[0];
+                const audioData = part?.inlineData?.data;
+                const mimeType = part?.inlineData?.mimeType;
+
+                if (audioData && mimeType && mimeType.startsWith("audio/")) {
+                    const sampleRateMatch = mimeType.match(/rate=(\d+)/);
+                    const sampleRate = sampleRateMatch ? parseInt(sampleRateMatch[1], 10) : 16000;
+                    
+                    const pcmData = base64ToArrayBuffer(audioData);
+                    const pcm16 = new Int16Array(pcmData);
+                    const wavBlob = pcmToWav(pcm16, sampleRate);
+                    const audioUrl = URL.createObjectURL(wavBlob);
+                    
+                    audioPlayback.src = audioUrl;
+                    audioPlayback.classList.remove('hidden');
+                    audioPlayback.play();
+
+                    audioPlayback.onended = () => {
+                        ttsButton.disabled = false;
+                        ttsButton.innerHTML = `<svg class="w-5 h-5 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 7.343a1 1 0 010 1.414 5 5 0 000 7.071 1 1 0 01-1.414 1.414 7 7 0 010-9.9l1.414 1.414z" clip-rule="evenodd"></path></svg>`;
+                    };
+
+                } else {
+                    throw new Error("Invalid or missing audio data in response.");
+                }
+            } catch (error) {
+                console.error("TTS Error:", error);
+                valueSummaryOutput.textContent = "Error: Could not generate audio. See console for details.";
+                ttsButton.disabled = false;
+                ttsButton.innerHTML = `<svg class="w-5 h-5 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18.707 3.293a1 1 0 010 1.414L15.414 8l3.293 3.293a1 1 0 01-1.414 1.414L14 9.414l-3.293 3.293a1 1 0 01-1.414-1.414L12.586 8 9.293 4.707a1 1 0 011.414-1.414L14 6.586l3.293-3.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>`;
+            }
+        }
+        
+        // --- Event Listeners Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Attach listener for the Application Solver button
+            const solutionButton = document.getElementById('solutionButton');
+            if (solutionButton) {
+                solutionButton.addEventListener('click', getSolutionRecommendation);
+            }
+
+            // Attach listener for the Summary Generation button
+            const summaryGenerateButton = document.getElementById('summaryGenerateButton');
+            if (summaryGenerateButton) {
+                summaryGenerateButton.addEventListener('click', generateValueSummary);
+            }
+
+            // Attach listener for the TTS button
+            const ttsButton = document.getElementById('ttsButton');
+            if (ttsButton) {
+                ttsButton.addEventListener('click', speakValueSummary);
+            }
+            
+            // Auto-run summary generation on DOM content load
+            generateValueSummary();
+        });
+
+    </script>
+</body>
+</html>

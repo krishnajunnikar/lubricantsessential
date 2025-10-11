@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Lubricants - Industrial Lubrication Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #4CAF50;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c5364;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #4CAF50, #2c5364);
+            margin: 1rem auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-top: 4px solid #4CAF50;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: #2c5364;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .partners-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .partner-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4CAF50, #2c5364);
+        }
+
+        .partner-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2c5364;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .service-item:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .service-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .products-showcase {
+            background: #f9f9f9;
+        }
+
+        .product-category-box {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .product-category-box h3 {
+            color: #2c5364;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #4CAF50;
+        }
+
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .product-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .product-tag:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.6);
+        }
+
+        .contact-section {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .contact-card h3 {
+            color: #2c5364;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .contact-detail::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Essential Lubricants</h1>
+        <p>Precision Solutions for Industrial Excellence</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Authorized Partner</h3>
+                    <p>Official channel partner of Kluber Lubrication and BASF Chemetall for multiple regions across Maharashtra</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Technical Expertise</h3>
+                    <p>Solution-based approach with comprehensive product analysis and tribological consultation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Complete Solutions</h3>
+                    <p>From specialty greases to maintenance products, we provide end-to-end lubrication solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Our Prestigious Partnerships</h2>
+            <div class="partner-grid">
+                <div class="partner-box">
+                    <div class="partner-logo">Kluber Lubrication India</div>
+                    <p><strong>Authorization:</strong> Authorized Channel Partner</p>
+                    <p><strong>Coverage Areas:</strong> Jalna, Khamgaon, Malkapur, Burhanpur, Latur, Nanded</p>
+                    <p style="margin-top: 1rem; color: #666;">Global leader in specialty lubricants, offering high-performance solutions for initial fill and maintenance applications across industries</p>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-logo">BASF Chemetall India</div>
+                    <p><strong>Authorization:</strong> Authorized Channel Partner</p>
+                    <p><strong>Coverage Areas:</strong> Aurangabad, Jalna</p>
+                    <p style="margin-top: 1rem; color: #666;">Leading supplier of surface treatment technologies including metalworking fluids, cleaners, and corrosion protection solutions</p>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-logo">Lawas Lube Specialties</div>
+                    <p><strong>Authorization:</strong> Product Partner</p>
+                    <p><strong>Specialization:</strong> Complete Industrial Lubrication Range</p>
+                    <p style="margin-top: 1rem; color: #666;">Comprehensive range of cutting oils, hydraulic oils, and specialty lubricants for diverse industrial applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h4>🔍 Oil Analysis</h4>
+                    <p>Comprehensive oil condition monitoring and analysis to optimize equipment performance and extend oil life</p>
+                </div>
+                <div class="service-item">
+                    <h4>🧪 Grease Analysis</h4>
+                    <p>Detailed grease testing to ensure optimal lubrication and prevent equipment failure</p>
+                </div>
+                <div class="service-item">
+                    <h4>🗺️ Lube Mapping</h4>
+                    <p>Complete lubrication audits and optimization programs for your facility</p>
+                </div>
+                <div class="service-item">
+                    <h4>⚙️ Total Productive Maintenance</h4>
+                    <p>Comprehensive TPM solutions to maximize equipment reliability and uptime</p>
+                </div>
+                <div class="service-item">
+                    <h4>💼 Technical Consultation</h4>
+                    <p>Expert tribological consultation for selecting the right lubricant for your specific application</p>
+                </div>
+                <div class="service-item">
+                    <h4>🛡️ Corrosion Protection</h4>
+                    <p>Specialized corrosion prevention solutions for long-term equipment protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-showcase">
+        <div class="container">
+            <h2 class="section-title">Product Portfolio</h2>
+            
+            <div class="product-category-box">
+                <h3>Kluber Lubrication Products</h3>
+                <div class="product-tags">
+                    <span class="product-tag">High Temperature Greases</span>
+                    <span class="product-tag">Water Resistant Greases</span>
+                    <span class="product-tag">High Speed Bearings</span>
+                    <span class="product-tag">Synthetic Gear Oils</span>
+                    <span class="product-tag">Wire Rope Oils</span>
+                    <span class="product-tag">Chain Lubricants</span>
+                    <span class="product-tag">Assembly Pastes</span>
+                    <span class="product-tag">Anti-Seize Compounds</span>
+                    <span class="product-tag">Heat Sink Pastes</span>
+                    <span class="product-tag">Leak Detector Sprays</span>
+                    <span class="product-tag">Contact Cleaners</span>
+                    <span class="product-tag">For-Life Lubrication</span>
+                </div>
+            </div>
+
+            <div class="product-category-box">
+                <h3>BASF Chemetall Products</h3>
+                <div class="product-tags">
+                    <span class="product-tag">Synthetic Cutting Oils</span>
+                    <span class="product-tag">Semi-Synthetic Cutting Oils</span>
+                    <span class="product-tag">Industrial Cleaners</span>
+                    <span class="product-tag">Washing Chemicals</span>
+                    <span class="product-tag">Rust Preventive</span>
+                    <span class="product-tag">Phosphating Chemicals</span>
+                    <span class="product-tag">PBA Solutions</span>
+                    <span class="product-tag">Surface Treatment</span>
+                    <span class="product-tag">Gardobond® Series</span>
+                    <span class="product-tag">Gardoclean® Series</span>
+                </div>
+            </div>
+
+            <div class="product-category-box">
+                <h3>Lawas Lube Specialties</h3>
+                <div class="product-tags">
+                    <span class="product-tag">Cutting Oil</span>
+                    <span class="product-tag">Hydraulic Oil</span>
+                    <span class="product-tag">Gear Oil</span>
+                    <span class="product-tag">Honing Oil</span>
+                    <span class="product-tag">Broaching Oil</span>
+                    <span class="product-tag">Rust Preventive Oil</span>
+                    <span class="product-tag">Semi-Synthetic Cutting Oil</span>
+                    <span class="product-tag">Specialty Greases</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Optimize Your Lubrication?</h2>
+            <p style="font-size: 1.2rem;">Let our experts help you select the right solution for your needs</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📍 Visit Us</h3>
+                    <div class="contact-detail">
+                        <strong>Address:</strong><br>
+                        Plot No. 8, Jijamata Colony<br>
+                        Near Paithan Gate<br>
+                        Aurangabad 431001<br>
+                        Maharashtra, India
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Call Us</h3>
+                    <div class="contact-detail">
+                        <strong>Mr. Shripad Savangikar</strong><br>
+                        <a href="tel:9422966662" style="color: #4CAF50; text-decoration: none; font-weight: bold;">+91 9422966662</a>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Mr. Vaibhav Kalyankar</strong><br>
+                        <span style="font-size: 0.9rem; color: #666;">Sales Executive</span><br>
+                        <a href="tel:7588118740" style="color: #4CAF50; text-decoration: none; font-weight: bold;">+91 7588118740</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Email Us</h3>
+                    <div class="contact-detail">
+                        <a href="mailto:lubricantsessential@gmail.com" style="color: #4CAF50; text-decoration: none; font-weight: bold;">lubricantsessential@gmail.com</a>
+                    </div>
+                    <div class="contact-detail" style="margin-top: 2rem;">
+                        <strong>Business Hours:</strong><br>
+                        Monday - Saturday: 9:00 AM - 6:00 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">&copy; 2025 Essential Lubricants. All Rights Reserved.</p>
+            <p style="opacity: 0.8;">Authorized Partner | Kluber Lubrication India | BASF Chemetall India</p>
+        </div>
+    </footer>
+</body>
+</html>
