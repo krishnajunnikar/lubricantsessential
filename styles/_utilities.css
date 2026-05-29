@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Utility Classes
+   Essential Lubricants Website
+   ========================================================================== */
+
+/* ==========================================================================
+   WhatsApp Floating Button (Requirements 5.1, 5.4, 5.5, 8.6)
+   - Fixed position, bottom-right corner
+   - 56x56px (exceeds 48px min touch target)
+   - 16px margin from viewport edges
+   - z-index: var(--z-whatsapp) = 800, above all page content
+   - Works as plain anchor link when JS is disabled
+   ========================================================================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  border-radius: 50%;
+  z-index: var(--z-whatsapp, 800);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform var(--transition-base, 250ms ease), box-shadow var(--transition-base, 250ms ease);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-float:focus {
+  outline: var(--focus-ring-width, 2px) solid var(--focus-ring-color, #2a5a8c);
+  outline-offset: var(--focus-ring-offset, 2px);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+}
+
+.whatsapp-float__icon {
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+}
+
+/* ==========================================================================
+   SRI Degraded Mode (Requirement 11.5)
+   When a third-party resource fails SRI verification and is blocked by the
+   browser, the site operates in degraded mode. These styles ensure the site
+   remains functional and visually acceptable without the blocked resource.
+   ========================================================================== */
+
+.sri-degraded {
+  /* Site remains fully functional - local styles are unaffected */
+  /* This class signals to developers that a third-party resource was blocked */
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

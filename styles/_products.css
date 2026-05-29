@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Product Catalog Styles
+   Essential Lubricants Website
+   
+   Responsive grid layout:
+   - 1 column at ≤576px
+   - 2 columns at 577px–1024px
+   - 3 columns at >1024px
+   
+   Validates: Requirements 2.1, 2.2, 2.7, 9.4
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Product Filters
+   Validates: Requirements 2.10, 9.1, 9.2, 12.3
+   -------------------------------------------------------------------------- */
+
+.product-filters {
+  margin-bottom: var(--space-8);
+}
+
+.product-filters__group {
+  margin-bottom: var(--space-4);
+}
+
+.product-filters__heading {
+  margin: 0 0 var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.product-filters__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Filter Button Base */
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-primary-bg, rgba(26, 58, 92, 0.05));
+}
+
+.filter-btn:focus {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Active/Pressed Filter Button */
+.filter-btn--active,
+.filter-btn[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.filter-btn--active:hover,
+.filter-btn[aria-pressed="true"]:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Product Grid Container
+   -------------------------------------------------------------------------- */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding: var(--space-4) 0;
+}
+
+/* 2 columns: 577px to 1024px */
+@media (min-width: 577px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 columns: above 1024px */
+@media (min-width: 1025px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Product Card
+   -------------------------------------------------------------------------- */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Product Card - Image Container
+   -------------------------------------------------------------------------- */
+
+.product-card__image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.67%; /* 3:2 aspect ratio */
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+}
+
+.product-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity var(--transition-base);
+}
+
+/* Placeholder state before image loads */
+.product-card__image[data-src] {
+  opacity: 0.6;
+}
+
+.product-card__image.loaded {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Product Card - Brand Badge
+   -------------------------------------------------------------------------- */
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-white);
+  line-height: var(--line-height-normal);
+}
+
+/* Kluber badge - blue */
+.product-card__badge--kluber {
+  background-color: var(--color-kluber);
+}
+
+/* Chemetall badge - red */
+.product-card__badge--chemetall {
+  background-color: var(--color-chemetall);
+}
+
+/* Lawas badge - green */
+.product-card__badge--lawas {
+  background-color: var(--color-lawas);
+}
+
+/* --------------------------------------------------------------------------
+   Product Card - Body Content
+   -------------------------------------------------------------------------- */
+
+.product-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--space-4);
+  gap: var(--space-3);
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-snug);
+}
+
+.product-card__description {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Product Card - CTA Button
+   -------------------------------------------------------------------------- */
+
+.product-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-base);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-align: center;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+  margin-top: auto;
+}
+
+.product-card__cta:hover {
+  background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.product-card__cta:focus {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* --------------------------------------------------------------------------
+   Empty State
+   -------------------------------------------------------------------------- */
+
+.product-grid__empty {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-16) var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.product-grid__empty-icon {
+  margin-bottom: var(--space-4);
+  color: var(--color-gray-400);
+}
+
+.product-grid__empty-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.product-grid__empty-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.product-grid__empty-text {
+  margin: 0;
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  max-width: 28rem;
+  line-height: var(--line-height-relaxed);
+}
+
+/* --------------------------------------------------------------------------
+   Lazy Loading Placeholder Styles
+   Validates: Requirements 7.4, 7.5, 7.6
+   -------------------------------------------------------------------------- */
+
+.lazy-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-base);
+  overflow: hidden;
+}
+
+.lazy-placeholder--error {
+  background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-100) 100%);
+  border: 1px solid var(--color-gray-200);
+  min-height: 120px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.lazy-placeholder__text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-4);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+/* Smooth transition for lazy-loaded images */
+img[data-src] {
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  background-color: var(--color-gray-100);
+}
+
+img.loaded {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Screen Reader Only (for aria-live announcer)
+   -------------------------------------------------------------------------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

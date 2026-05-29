@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Footer Styles
+   Essential Lubricants Website
+   
+   Footer with 3-4 column grid containing:
+   - Contact info (address, phone, email)
+   - Quick links
+   - Partner logos section
+   - Copyright
+   
+   Requirements: 1.2
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Site Footer
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+  padding-top: var(--space-12);
+  padding-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Footer Grid
+   -------------------------------------------------------------------------- */
+
+.footer-grid {
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: 1fr;
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
+}
+
+/* 2 columns at 576px */
+@media (min-width: 576px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 4 columns at 1024px */
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 var(--container-padding-x-lg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Footer Sections
+   -------------------------------------------------------------------------- */
+
+.footer-section {
+  margin-bottom: var(--space-4);
+}
+
+.footer-section__title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+  position: relative;
+  padding-bottom: var(--space-2);
+}
+
+.footer-section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Footer Contact Info
+   -------------------------------------------------------------------------- */
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+  line-height: var(--line-height-relaxed);
+}
+
+.footer-contact__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  fill: var(--color-secondary);
+}
+
+.footer-contact__link {
+  color: var(--color-gray-300);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-contact__link:hover,
+.footer-contact__link:focus-visible {
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Footer Quick Links
+   -------------------------------------------------------------------------- */
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links__item {
+  margin-bottom: var(--space-2);
+}
+
+.footer-links__link {
+  color: var(--color-gray-300);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-links__link:hover,
+.footer-links__link:focus-visible {
+  color: var(--color-white);
+  padding-left: var(--space-1);
+}
+
+/* --------------------------------------------------------------------------
+   Footer Partner Logos
+   -------------------------------------------------------------------------- */
+
+.footer-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.footer-partners__logo {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-partners__logo:hover {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Footer Bottom Bar (Copyright)
+   -------------------------------------------------------------------------- */
+
+.footer-bottom {
+  margin-top: var(--space-10);
+  padding: var(--space-4) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-bottom__content {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+@media (min-width: 768px) {
+  .footer-bottom__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-bottom__copyright {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-400);
+}
+
+.footer-bottom__credits {
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
+}

@@ -1,0 +1,360 @@
+/* ==========================================================================
+   Modern CSS Reset / Normalize
+   Essential Lubricants Website
+   
+   Based on modern reset best practices:
+   - Box-sizing border-box globally
+   - Remove default margins and padding
+   - Sensible defaults for images, forms, and typography
+   - Accessibility-friendly focus styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Box Sizing
+   -------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   Remove Default Margins and Padding
+   -------------------------------------------------------------------------- */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Document & Body
+   -------------------------------------------------------------------------- */
+
+html {
+  /* Prevent font size inflation on mobile */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  /* Smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+
+  /* Base font size for rem calculations */
+  font-size: 100%;
+
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+}
+
+body {
+  /* System font stack - no external font loading (Requirement 10.7) */
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+
+  /* Minimum height for sticky footer */
+  min-height: 100vh;
+
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+
+a {
+  color: var(--color-text-link);
+  text-decoration-skip-ink: auto;
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+}
+
+/* Remove default link styles where appropriate */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Images and Media
+   -------------------------------------------------------------------------- */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove border on images inside links in IE 10 */
+img {
+  border-style: none;
+}
+
+/* --------------------------------------------------------------------------
+   Form Elements - Inherit Typography
+   -------------------------------------------------------------------------- */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Remove default textarea resize restriction */
+textarea {
+  resize: vertical;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility - Focus Styles (Requirement 9.6)
+   Visible focus indicator: 2px outline with 3:1 contrast ratio
+   --focus-ring-color (#2a5a8c) provides 5.3:1 contrast against white backgrounds
+   -------------------------------------------------------------------------- */
+
+/* Fallback for browsers that don't support :focus-visible */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Remove focus ring on mouse click for browsers that support :focus-visible */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Apply custom focus ring only on keyboard navigation */
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Ensure focus is visible on all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Skip link target (main content) should not show focus ring on click */
+main[tabindex="-1"]:focus {
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion - Accessibility
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Selection Styles
+   -------------------------------------------------------------------------- */
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar Styles (Webkit)
+   -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+/* --------------------------------------------------------------------------
+   Misc Resets
+   -------------------------------------------------------------------------- */
+
+/* Remove default hr styling */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-gray-200);
+  margin: var(--space-8) 0;
+}
+
+/* Prevent sub and sup from affecting line height */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Remove default summary marker in some browsers */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* Hidden attribute support */
+[hidden] {
+  display: none !important;
+}
+
+/* Screen reader only utility (used for skip links and accessible labels) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skip link becomes visible on focus */
+.sr-only:focus,
+.skip-link:focus {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  width: auto;
+  height: auto;
+  padding: var(--space-2) var(--space-4);
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  z-index: var(--z-toast);
+  border-radius: var(--radius-base);
+}

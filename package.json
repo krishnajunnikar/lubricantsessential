@@ -1,0 +1,14 @@
+{
+  "name": "essential-lubricants-website",
+  "version": "1.0.0",
+  "description": "Essential Lubricants static website - tests",
+  "private": true,
+  "scripts": {
+    "test": "jest --run"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "fast-check": "^3.15.0"
+  }
+}

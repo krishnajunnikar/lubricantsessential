@@ -1,0 +1,8 @@
+# Robots.txt - Essential Lubricants Website
+# Allow all crawlers to index all pages
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.essentiallubricants.com/sitemap.xml
