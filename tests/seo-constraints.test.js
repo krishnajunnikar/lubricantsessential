@@ -27,7 +27,7 @@ const PAGES = [
 ];
 
 const CITY_NAMES = [
-  'Aurangabad',
+  'Chhatrapati Sambhajinagar',
   'Jalna',
   'Khamgaon',
   'Malkapur',
@@ -143,7 +143,7 @@ describe('Property 22: Local SEO City References', () => {
    * **Validates: Requirement 6.6**
    * 
    * For any page in the Website, the meta description SHALL include at least
-   * two city names from the list (Aurangabad, Jalna, Khamgaon, Malkapur,
+   * two city names from the list (Chhatrapati Sambhajinagar, Jalna, Khamgaon, Malkapur,
    * Burhanpur, Latur, Nanded).
    */
 
